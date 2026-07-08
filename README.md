@@ -1,6 +1,6 @@
 # Ratsional Tengsizliklar Test Generator
 
-Professional matematik test generatori — Ratsional tengsizliklar uchun Microsoft Word formatida.
+Professional matematik test generatori — Ratsional va ko'rsatkichli tengsizliklar uchun Microsoft Word formatida.
 
 ## 📋 Tavsif
 
@@ -8,30 +8,36 @@ Ushbu dastur matematik tengsizliklardan professional A/B/C/D variantli testlar y
 
 ## ✨ Xususiyatlar
 
-- ✅ **114 ta professional savol** — Ratsional va ko'rsatkichli tengsizliklar (3 PDF dan)
+- ✅ **140 ta professional savol** — Ratsional va ko'rsatkichli tengsizliklar (4 PDF dan)
 - ✅ **OMML formatdagi matematik ifodalar** — Word'da to'liq tahrir qilinadigan
-- ✅ **Muvozanatli javoblar taqsimoti** — A=29, B=29, C=28, D=28
+- ✅ **Mukammal balans**: A=35, B=35, C=35, D=35 (100% muvozanat!)
 - ✅ **Interval yozuvi** — Professional matematika kitoblari uslubida
-- ✅ **Ko'rsatkichli tengsizliklar** — x⁵, x⁶, x⁹ va boshqalar
+- ✅ **Ko'rsatkichli tengsizliklar** — x⁴, x⁶, x⁷, x⁸, x⁹, x¹², x¹³
+- ✅ **Funksiyalar sohasi** — √ ostidagi ifodalar
 - ✅ **Javoblar kaliti** — Jadval ko'rinishida, statistika bilan
 - ✅ **Tayyor nashrga** — Print-ready formatda
 
 ## 📁 Fayllar
 
 - `ratsional_tengsizliklar_test.py` — Test generatori (Python dasturi)
-- `Ratsional_Tengsizliklar_ULTIMATE_Test.docx` — **ULTIMATE TEST (114 savol)** 🌟
+- `Ratsional_Tengsizliklar_MEGA_Test.docx` — **MEGA TEST (140 savol)** 💎
+- `Ratsional_Tengsizliklar_ULTIMATE_Test.docx` — Ultimate test (114 savol) 🌟
 - `Ratsional_Tengsizliklar_FULL_Test.docx` — To'liq test (88 savol)
 - `Ratsional_Tengsizliklar_Test_56q.docx` — Birinchi versiya (56 savol)
 - `Ratsional tengsizlik 1.pdf` — Asl manba 1 (PDF format)
 - `Ratsional tengsizliklar 2.pdf` — Asl manba 2 (PDF format)
 - `Ratsional tengsizliklar 3.pdf` — Asl manba 3 (PDF format)
+- `Ratsional tengsizliklar 4.pdf` — Asl manba 4 (PDF format)
 
 ## 🚀 Ishlatish
 
 ### Tayyorlangan testni ochish
 
 ```bash
-# TAVSIYA: Ultimate versiya (114 savol) 🌟
+# TAVSIYA: Mega versiya (140 savol) 💎
+Ratsional_Tengsizliklar_MEGA_Test.docx
+
+# Yoki Ultimate versiya (114 savol) 🌟
 Ratsional_Tengsizliklar_ULTIMATE_Test.docx
 
 # Yoki to'liq versiya (88 savol)
@@ -50,7 +56,7 @@ python3 ratsional_tengsizliklar_test.py
 
 Natija: `Ratsional_Tengsizliklar_Test.docx` fayli yaratiladi.
 
-## 📊 Test Tuzilishi (114 ta savol)
+## 📊 Test Tuzilishi (140 ta savol)
 
 ### Savollar taqsimoti
 
@@ -62,7 +68,9 @@ Natija: `Ratsional_Tengsizliklar_Test.docx` fayli yaratiladi.
 6. **76-88**: Murakkab kasrli sistemalar
 7. **89-98**: Ratsional tengsizliklar (2-qism)
 8. **99-107**: Ko'rsatkichli tengsizliklar (x⁴, x⁶, x⁷, x⁹, x¹³)
-9. **108-114**: Tengsizliklar sistemasi
+9. **108-114**: Tengsizliklar sistemasi (1-qism)
+10. **115-129**: Ratsional tengsizliklar (3-4 qismlar)
+11. **130-140**: Funksiyalar sohasi va qo'shimcha sistemalar
 
 ### Javoblar formati
 
@@ -74,6 +82,17 @@ Barcha javoblar quyidagi ko'rinishlarda:
 
 ## 🎯 Javoblar Statistikasi
 
+### 💎 Mega Test (140 savol) — MUKAMMAL BALANS!
+
+```
+A = 35 savol (25.0%)
+B = 35 savol (25.0%)
+C = 35 savol (25.0%)
+D = 35 savol (25.0%)
+```
+
+**100% MUKAMMAL MUVOZANAT!** 🎯
+
 ### Ultimate Test (114 savol)
 
 ```
@@ -82,8 +101,6 @@ B = 29 savol (25.4%)
 C = 28 savol (24.6%)
 D = 28 savol (24.6%)
 ```
-
-**Mukammal muvozanatli taqsimot!**
 
 ### To'liq Test (88 savol)
 
@@ -219,12 +236,14 @@ Ushbu test quyidagi fayllardan olingan:
 1. **[Ratsional tengsizlik 1.pdf](Ratsional%20tengsizlik%201.pdf)** — 1-56 masalalar
 2. **[Ratsional tengsizliklar 2.pdf](Ratsional%20tengsizliklar%202.pdf)** — 57-88 masalalar
 3. **[Ratsional tengsizliklar 3.pdf](Ratsional%20tengsizliklar%203.pdf)** — 89-114 masalalar (ko'rsatkichli + sistemalar)
+4. **[Ratsional tengsizliklar 4.pdf](Ratsional%20tengsizliklar%204.pdf)** — 115-140 masalalar (funksiyalar sohasi)
 
 ## 📈 Versiyalar Tarixi
 
 | Versiya | Sana | Savollar soni | Tavsif |
 |---------|------|---------------|--------|
-| **3.0** | 2026-07-08 | **114** | Ultimate versiya (3 PDF birlashtirilgan) 🌟 |
+| **4.0** | 2026-07-08 | **140** | Mega versiya (4 PDF birlashtirilgan) 💎 |
+| 3.0 | 2026-07-08 | 114 | Ultimate versiya (3 PDF birlashtirilgan) 🌟 |
 | 2.0 | 2026-07-08 | 88 | To'liq versiya (2 PDF birlashtirilgan) |
 | 1.0 | 2026-07-08 | 56 | Birinchi nashr |
 
@@ -247,5 +266,5 @@ Ushbu loyiha ochiq kodli va ta'lim maqsadlarida erkin foydalanish uchun.
 ---
 
 **Oxirgi yangilanish**: 2026-yil 8-iyul  
-**Versiya**: 3.0 (114 savol — ULTIMATE) 🌟  
-**Avvalgi versiyalar**: 2.0 (88 savol), 1.0 (56 savol)
+**Versiya**: 4.0 (140 savol — MEGA ULTIMATE) 💎  
+**Avvalgi versiyalar**: 3.0 (114 savol), 2.0 (88 savol), 1.0 (56 savol)
