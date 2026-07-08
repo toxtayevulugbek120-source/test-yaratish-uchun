@@ -8,9 +8,9 @@ Ushbu dastur matematik tengsizliklardan professional A/B/C/D variantli testlar y
 
 ## ✨ Xususiyatlar
 
-- ✅ **56 ta professional savol** — Ratsional tengsizliklar bo'yicha
+- ✅ **88 ta professional savol** — Ratsional tengsizliklar bo'yicha (2 PDF dan)
 - ✅ **OMML formatdagi matematik ifodalar** — Word'da to'liq tahrir qilinadigan
-- ✅ **Muvozanatli javoblar taqsimoti** — A, B, C, D har biri 14 martadan
+- ✅ **Muvozanatli javoblar taqsimoti** — A, B, C, D har biri 22 martadan
 - ✅ **Interval yozuvi** — Professional matematika kitoblari uslubida
 - ✅ **Javoblar kaliti** — Jadval ko'rinishida, statistika bilan
 - ✅ **Tayyor nashrga** — Print-ready formatda
@@ -18,15 +18,20 @@ Ushbu dastur matematik tengsizliklardan professional A/B/C/D variantli testlar y
 ## 📁 Fayllar
 
 - `ratsional_tengsizliklar_test.py` — Test generatori (Python dasturi)
-- `Ratsional_Tengsizliklar_Test_56q.docx` — Tayyor test (56 savol)
-- `Ratsional tengsizlik 1.pdf` — Asl manba (PDF format)
+- `Ratsional_Tengsizliklar_FULL_Test.docx` — **TO'LIQ TEST (88 savol)** ⭐
+- `Ratsional_Tengsizliklar_Test_56q.docx` — Birinchi versiya (56 savol)
+- `Ratsional tengsizlik 1.pdf` — Asl manba 1 (PDF format)
+- `Ratsional tengsizliklar 2.pdf` — Asl manba 2 (PDF format)
 
 ## 🚀 Ishlatish
 
 ### Tayyorlangan testni ochish
 
 ```bash
-# Microsoft Word yoki LibreOffice'da oching
+# TAVSIYA: To'liq versiya (88 savol)
+Ratsional_Tengsizliklar_FULL_Test.docx
+
+# Yoki birinchi versiya (56 savol)
 Ratsional_Tengsizliklar_Test_56q.docx
 ```
 
@@ -39,14 +44,17 @@ python3 ratsional_tengsizliklar_test.py
 
 Natija: `Ratsional_Tengsizliklar_Test.docx` fayli yaratiladi.
 
-## 📊 Test Tuzilishi
+## 📊 Test Tuzilishi (88 ta savol)
 
-### Savollar taqsimoti (56 ta)
+### Savollar taqsimoti
 
 1. **1-14**: Oddiy ratsional tengsizliklar
 2. **15-30**: Kvadratik va ko'p hadli tengsizliklar  
 3. **31-45**: Murakkab kasrli tengsizliklar
 4. **46-56**: Maxsus holatlar (diskriminant bilan)
+5. **57-75**: Nisbatlar va aralash kasrlar
+6. **76-85**: Murakkab kasrli sistemalar
+7. **86-88**: Iqtidorli o'quvchilar uchun (yuqori daraja)
 
 ### Javoblar formati
 
@@ -58,20 +66,24 @@ Barcha javoblar quyidagi ko'rinishlarda:
 
 ## 🎯 Javoblar Statistikasi
 
+### To'liq Test (88 savol)
+
 ```
-A = 14 savol (25%)
-B = 14 savol (25%)
-C = 14 savol (25%)
-D = 14 savol (25%)
+A = 22 savol (25%)
+B = 22 savol (25%)
+C = 22 savol (25%)
+D = 22 savol (25%)
 ```
 
-**To'liq muvozanatli taqsimot!**
+**Mukammal muvozanatli taqsimot!**
 
-## 💡 Misol
+## 💡 Misollar
 
-**Savol:**
+### Oddiy Ratsional Tengsizlik
+
+**Savol 1:**
 ```
-1.  x/(x−1) ≤ 0
+x/(x−1) ≤ 0
 ```
 
 **Variantlar:**
@@ -80,6 +92,36 @@ A) (−∞ ; 0] ∪ (1 ; +∞)
 B) [0 ; 1)                    ← To'g'ri javob
 C) (−∞ ; 0) ∪ (1 ; +∞)
 D) [0 ; 1]
+```
+
+### Murakkab Kasrli Tengsizlik
+
+**Savol 85:**
+```
+(2x²−14x+6)/(x²−4x+3) ≥ (3x−8)/(x−3)
+```
+
+**Variantlar:**
+```
+A) (−∞ ; 0] ∪ (1 ; 2] ∪ (3 ; +∞)    ← To'g'ri javob
+B) [0 ; 1) ∪ [2 ; 3)
+C) (−∞ ; 0) ∪ [1 ; 2) ∪ [3 ; +∞)
+D) [0 ; 2] ∪ (3 ; +∞)
+```
+
+### Yuqori Daraja (Iqtidorlilar uchun)
+
+**Savol 86:**
+```
+x⁵ + x³ + x ≥ 138
+```
+
+**Variantlar:**
+```
+A) [3 ; +∞)                   ← To'g'ri javob
+B) (−∞ ; 3]
+C) (3 ; +∞)
+D) ℝ
 ```
 
 ## 🛠️ Texnik Tafsilotlar
@@ -123,9 +165,19 @@ Faqat standart kutubxonalar:
 - `msup(base, sup)` — Daraja (superscript)
 - `mg(*parts)` — Bir nechta elementni birlashtirish
 
-## 📚 Manba
+## 📚 Manbalar
 
-Ushbu test [Ratsional tengsizlik 1.pdf](https://github.com/toxtayevulugbek120-source/test-yaratish-uchun) faylidan olingan.
+Ushbu test quyidagi fayllardan olingan:
+
+1. **[Ratsional tengsizlik 1.pdf](Ratsional%20tengsizlik%201.pdf)** — 1-56 masalalar
+2. **[Ratsional tengsizliklar 2.pdf](Ratsional%20tengsizliklar%202.pdf)** — 57-88 masalalar (qo'shimcha)
+
+## 📈 Versiyalar Tarixi
+
+| Versiya | Sana | Savollar soni | Tavsif |
+|---------|------|---------------|--------|
+| **2.0** | 2026-07-08 | **88** | To'liq versiya (2 PDF birlashtirilgan) ⭐ |
+| 1.0 | 2026-07-08 | 56 | Birinchi nashr |
 
 ## 👨‍💻 Muallif
 
@@ -146,4 +198,5 @@ Ushbu loyiha ochiq kodli va ta'lim maqsadlarida erkin foydalanish uchun.
 ---
 
 **Oxirgi yangilanish**: 2026-yil 8-iyul  
-**Versiya**: 1.0 (56 savol)
+**Versiya**: 2.0 (88 savol — TO'LIQ) ⭐  
+**Birinchi nashr**: 1.0 (56 savol)
