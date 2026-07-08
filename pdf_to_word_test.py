@@ -378,6 +378,751 @@ def generate_questions():
         "correct": 0
     })
     
+    # Problem 25: 2x² + xy − 14 = 0, 3x − y − 3 = 0
+    questions.append({
+        "num": 25,
+        "q": mg(mr("2"), msup(mr("x"), mr("2")), mr(" + xy − 14 = 0,  3x − y − 3 = 0")),
+        "variants": [
+            mg(mr("(2; 3)")),
+            mg(mr("(1; 0)")),
+            mg(mr("(−7/2; −27/2)")),
+            mg(mr("(3; 6)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 26: x² + 4y² = 37, x + y = 4
+    questions.append({
+        "num": 26,
+        "q": mg(msup(mr("x"), mr("2")), mr(" + 4"), msup(mr("y"), mr("2")), mr(" = 37,  x + y = 4")),
+        "variants": [
+            mg(mr("(5; −1) va (−1; 5)")),
+            mg(mr("(6; −2) va (−2; 6)")),
+            mg(mr("(3; 1) va (1; 3)")),
+            mg(mr("(4; 0) va (0; 4)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 27: x² − 2y² = 2, 2x + y = −3
+    questions.append({
+        "num": 27,
+        "q": mg(msup(mr("x"), mr("2")), mr(" − 2"), msup(mr("y"), mr("2")), mr(" = 2,  2x + y = −3")),
+        "variants": [
+            mg(mr("(−1; −1) va (2; −7)")),
+            mg(mr("(−2; 1)")),
+            mg(mr("(1; −5)")),
+            mg(mr("(0; −3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 28: y² − 3x² = −2, x + 2y = 1
+    questions.append({
+        "num": 28,
+        "q": mg(msup(mr("y"), mr("2")), mr(" − 3"), msup(mr("x"), mr("2")), mr(" = −2,  x + 2y = 1")),
+        "variants": [
+            mg(mr("(1; 0) va (7; −3)")),
+            mg(mr("(−1; 1)")),
+            mg(mr("(3; −1)")),
+            mg(mr("(5; −2)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 29: x² + 2xy = −3, 2x − y = −4
+    questions.append({
+        "num": 29,
+        "q": mg(msup(mr("x"), mr("2")), mr(" + 2xy = −3,  2x − y = −4")),
+        "variants": [
+            mg(mr("(−1; 2) va (−3; −2)")),
+            mg(mr("(1; 6)")),
+            mg(mr("(2; 8)")),
+            mg(mr("(−2; 0)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 30: 2x² + 3y² = 14, x + 2y = 5
+    questions.append({
+        "num": 30,
+        "q": mg(mr("2"), msup(mr("x"), mr("2")), mr(" + 3"), msup(mr("y"), mr("2")), 
+              mr(" = 14,  x + 2y = 5")),
+        "variants": [
+            mg(mr("(1; 2) va (3; 1)")),
+            mg(mr("(5; 0) va (1; 2)")),
+            mg(mr("(2; 1.5)")),
+            mg(mr("(3; 1) faqat"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 31: (x−5)(y−3) = 0, (x−8)(y+2) = 0
+    questions.append({
+        "num": 31,
+        "q": mg(mr("{  (x − 5)(y − 3) = 0, (x − 8)(y + 2) = 0")),
+        "variants": [
+            mg(mr("(5; −2) va (8; 3)")),
+            mg(mr("(5; 3) va (8; −2)")),
+            mg(mr("(5; −2) faqat")),
+            mg(mr("(8; 3) faqat"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 32: (x−7)(y−8) = 0, (x+3)(y−7) = 0
+    questions.append({
+        "num": 32,
+        "q": mg(mr("{  (x − 7)(y − 8) = 0, (x + 3)(y − 7) = 0")),
+        "variants": [
+            mg(mr("(7; 7) va (−3; 8)")),
+            mg(mr("(7; 8) va (−3; 7)")),
+            mg(mr("(7; 7) faqat")),
+            mg(mr("(−3; 8) faqat"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 33: (x−2)(x+3)(y−5) = 0, (y−7)(y+3)(x−5) = 0
+    questions.append({
+        "num": 33,
+        "q": mg(mr("{  (x − 2)(x + 3)(y − 5) = 0, (y − 7)(y + 3)(x − 5) = 0")),
+        "variants": [
+            mg(mr("(2; 7), (2; −3), (−3; 7), (−3; −3), (5; 5)")),
+            mg(mr("(2; 5), (−3; 5), (5; 7), (5; −3)")),
+            mg(mr("(2; 7), (2; −3), (5; 5) faqat")),
+            mg(mr("(−3; 7), (−3; −3), (5; 7) faqat"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 34: (x−5)²/(y−3) = 0, (y−3)²/(x−5) = 0
+    questions.append({
+        "num": 34,
+        "q": mg(mfrac(msup(mr("(x − 5)"), mr("2")), mr("y − 3")), mr(" = 0, "), 
+              mfrac(msup(mr("(y − 3)"), mr("2")), mr("x − 5")), mr(" = 0")),
+        "variants": [
+            mg(mr("(5; 3)")),
+            mg(mr("(3; 5)")),
+            mg(mr("(5; 5)")),
+            mg(mr("(3; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 35: (x−2)(y−3)/(x−8) = 0, (x−8)(y−5)/(x+7) = 0
+    questions.append({
+        "num": 35,
+        "q": mg(mfrac(mr("(x − 2)(y − 3)"), mr("x − 8")), mr(" = 0, "), 
+              mfrac(mr("(x − 8)(y − 5)"), mr("x + 7")), mr(" = 0")),
+        "variants": [
+            mg(mr("(2; 5)")),
+            mg(mr("(2; 3)")),
+            mg(mr("(8; 5)")),
+            mg(mr("(−7; 5)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 36: (x−2)² + (y+5)² = 0
+    questions.append({
+        "num": 36,
+        "q": mg(msup(mr("(x − 2)"), mr("2")), mr(" + "), msup(mr("(y + 5)"), mr("2")), mr(" = 0")),
+        "variants": [
+            mg(mr("(2; −5)")),
+            mg(mr("(−2; 5)")),
+            mg(mr("(2; 5)")),
+            mg(mr("Yechimi yo'q"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 37: (3x−2)² + (y−3)² = 0
+    questions.append({
+        "num": 37,
+        "q": mg(msup(mr("(3x − 2)"), mr("2")), mr(" + "), msup(mr("(y − 3)"), mr("2")), mr(" = 0")),
+        "variants": [
+            mg(mr("(2/3; 3)")),
+            mg(mr("(−2/3; −3)")),
+            mg(mr("(3; 2/3)")),
+            mg(mr("(2; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 38: (x+5)² + (2y−8)² = 0
+    questions.append({
+        "num": 38,
+        "q": mg(msup(mr("(x + 5)"), mr("2")), mr(" + "), msup(mr("(2y − 8)"), mr("2")), mr(" = 0")),
+        "variants": [
+            mg(mr("(−5; 4)")),
+            mg(mr("(5; −4)")),
+            mg(mr("(−5; 8)")),
+            mg(mr("(5; 4)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 39: (3x−6)⁴ + (y−5)⁴ = 0
+    questions.append({
+        "num": 39,
+        "q": mg(msup(mr("(3x − 6)"), mr("4")), mr(" + "), msup(mr("(y − 5)"), mr("4")), mr(" = 0")),
+        "variants": [
+            mg(mr("(2; 5)")),
+            mg(mr("(−2; −5)")),
+            mg(mr("(6; 5)")),
+            mg(mr("(2; −5)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 40: (x+1)² + (y+2)² = 0
+    questions.append({
+        "num": 40,
+        "q": mg(msup(mr("(x + 1)"), mr("2")), mr(" + "), msup(mr("(y + 2)"), mr("2")), mr(" = 0")),
+        "variants": [
+            mg(mr("(−1; −2)")),
+            mg(mr("(1; 2)")),
+            mg(mr("(−1; 2)")),
+            mg(mr("(1; −2)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 41: x + y = 4, 1/x + 1/y = 1
+    questions.append({
+        "num": 41,
+        "q": mg(mr("{  x + y = 4, "), mfrac(mr("1"), mr("x")), mr(" + "), 
+              mfrac(mr("1"), mr("y")), mr(" = 1")),
+        "variants": [
+            mg(mr("(2; 2)")),
+            mg(mr("(1; 3) va (3; 1)")),
+            mg(mr("(4; 0) va (0; 4)")),
+            mg(mr("Yechimi yo'q"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 42: xy = 6, 1/x − 1/y = 1/6
+    questions.append({
+        "num": 42,
+        "q": mg(mr("{  xy = 6, "), mfrac(mr("1"), mr("x")), mr(" − "), 
+              mfrac(mr("1"), mr("y")), mr(" = "), mfrac(mr("1"), mr("6"))),
+        "variants": [
+            mg(mr("(2; 3) va (−3; −2)")),
+            mg(mr("(3; 2) va (−2; −3)")),
+            mg(mr("(6; 1) va (−1; −6)")),
+            mg(mr("(1; 6) va (−6; −1)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 43: x + y = 8, 1/x + 1/y = 1/2
+    questions.append({
+        "num": 43,
+        "q": mg(mr("{  x + y = 8, "), mfrac(mr("1"), mr("x")), mr(" + "), 
+              mfrac(mr("1"), mr("y")), mr(" = "), mfrac(mr("1"), mr("2"))),
+        "variants": [
+            mg(mr("(4; 4)")),
+            mg(mr("(2; 6) va (6; 2)")),
+            mg(mr("(1; 7) va (7; 1)")),
+            mg(mr("(3; 5) va (5; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 44: x + y = 7, 1/x + 1/y = 7/12
+    questions.append({
+        "num": 44,
+        "q": mg(mr("{  x + y = 7, "), mfrac(mr("1"), mr("x")), mr(" + "), 
+              mfrac(mr("1"), mr("y")), mr(" = "), mfrac(mr("7"), mr("12"))),
+        "variants": [
+            mg(mr("(3; 4) va (4; 3)")),
+            mg(mr("(2; 5) va (5; 2)")),
+            mg(mr("(1; 6) va (6; 1)")),
+            mg(mr("Yechimi yo'q"))
+        ],
+        "correct": 0
+    })
+    
+    # ═══════════════════════════════════════════════════════════════
+    #  PROBLEMS 45-78 FROM SECOND PDF
+    # ═══════════════════════════════════════════════════════════════
+    
+    # Problem 45: x − y = 1, 1/x − 1/y = 7/12
+    questions.append({
+        "num": 45,
+        "q": mg(mr("{  x − y = 1, "), mfrac(mr("1"), mr("x")), mr(" − "), 
+              mfrac(mr("1"), mr("y")), mr(" = "), mfrac(mr("7"), mr("12"))),
+        "variants": [
+            mg(mr("(3; 4)")),
+            mg(mr("(4; 3)")),
+            mg(mr("(2; 3)")),
+            mg(mr("(−3; −4)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 46: x = y², y = x²
+    questions.append({
+        "num": 46,
+        "q": mg(mr("{  x = "), msup(mr("y"), mr("2")), mr(", y = "), msup(mr("x"), mr("2"))),
+        "variants": [
+            mg(mr("(0; 0) va (1; 1)")),
+            mg(mr("(0; 0) va (−1; 1)")),
+            mg(mr("(1; 1) faqat")),
+            mg(mr("(0; 0), (1; 1), (−1; 1)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 47: x = y², 8y = x²
+    questions.append({
+        "num": 47,
+        "q": mg(mr("{  x = "), msup(mr("y"), mr("2")), mr(", 8y = "), msup(mr("x"), mr("2"))),
+        "variants": [
+            mg(mr("(0; 0) va (4; 2)")),
+            mg(mr("(0; 0) va (2; 4)")),
+            mg(mr("(4; 2) faqat")),
+            mg(mr("(2; 2) va (4; 4)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 48: xy² = 4, x²y = 2
+    questions.append({
+        "num": 48,
+        "q": mg(mr("{  x"), msup(mr("y"), mr("2")), mr(" = 4, "), msup(mr("x"), mr("2")), mr("y = 2")),
+        "variants": [
+            mg(mr("(2; √2)")),
+            mg(mr("(1; 2)")),
+            mg(mr("(√2; 2)")),
+            mg(mr("(2; 1)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 49: x⁴y³ = 9, x³y² = 27
+    questions.append({
+        "num": 49,
+        "q": mg(msup(mr("x"), mr("4")), msup(mr("y"), mr("3")), mr(" = 9, "), 
+              msup(mr("x"), mr("3")), msup(mr("y"), mr("2")), mr(" = 27")),
+        "variants": [
+            mg(mr("(3; 1/3)")),
+            mg(mr("(1/3; 3)")),
+            mg(mr("(9; 1/9)")),
+            mg(mr("(3; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 50: x² + y = 20, y² + x = 20
+    questions.append({
+        "num": 50,
+        "q": mg(msup(mr("x"), mr("2")), mr(" + y = 20, "), msup(mr("y"), mr("2")), mr(" + x = 20")),
+        "variants": [
+            mg(mr("(4; 4) va (−5; −5)")),
+            mg(mr("(4; 4) faqat")),
+            mg(mr("(5; 5) va (−4; −4)")),
+            mg(mr("(−5; −5) faqat"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 51: x² + 2y = 15, y² + 2x = 15
+    questions.append({
+        "num": 51,
+        "q": mg(msup(mr("x"), mr("2")), mr(" + 2y = 15, "), msup(mr("y"), mr("2")), mr(" + 2x = 15")),
+        "variants": [
+            mg(mr("(3; 3) va (−5; −5)")),
+            mg(mr("(3; 3) faqat")),
+            mg(mr("(5; 5) va (−3; −3)")),
+            mg(mr("(−5; −5) faqat"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 52: x + y + xy = 5, x³ + y³ + xy = 7
+    questions.append({
+        "num": 52,
+        "q": mg(mr("{  x + y + xy = 5, "), msup(mr("x"), mr("3")), mr(" + "), 
+              msup(mr("y"), mr("3")), mr(" + xy = 7")),
+        "variants": [
+            mg(mr("(2; 1) va (1; 2)")),
+            mg(mr("(3; 1) va (1; 3)")),
+            mg(mr("(2; 2)")),
+            mg(mr("(1; 1)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 53: x + y + xy = 7, x² + y² + xy = 13
+    questions.append({
+        "num": 53,
+        "q": mg(mr("{  x + y + xy = 7, "), msup(mr("x"), mr("2")), mr(" + "), 
+              msup(mr("y"), mr("2")), mr(" + xy = 13")),
+        "variants": [
+            mg(mr("(3; 1) va (1; 3)")),
+            mg(mr("(2; 2)")),
+            mg(mr("(4; 1) va (1; 4)")),
+            mg(mr("(3; 2) va (2; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 54: x/y + x + y = 7, (x/y)(x + y) = 12
+    questions.append({
+        "num": 54,
+        "q": mg(mfrac(mr("x"), mr("y")), mr(" + x + y = 7, "), 
+              mfrac(mr("x"), mr("y")), mr("(x + y) = 12")),
+        "variants": [
+            mg(mr("(3; 1)")),
+            mg(mr("(2; 1)")),
+            mg(mr("(4; 1)")),
+            mg(mr("(6; 2)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 55: (x/y)(x + y) = 20, (x/y) + x + y = 9
+    questions.append({
+        "num": 55,
+        "q": mg(mfrac(mr("x"), mr("y")), mr("(x + y) = 20, "), 
+              mfrac(mr("x"), mr("y")), mr(" + x + y = 9")),
+        "variants": [
+            mg(mr("(4; 1)")),
+            mg(mr("(5; 1)")),
+            mg(mr("(3; 1)")),
+            mg(mr("(8; 2)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 56: x³ − y³ = 7, x² + xy + y² = 7
+    questions.append({
+        "num": 56,
+        "q": mg(msup(mr("x"), mr("3")), mr(" − "), msup(mr("y"), mr("3")), mr(" = 7, "), 
+              msup(mr("x"), mr("2")), mr(" + xy + "), msup(mr("y"), mr("2")), mr(" = 7")),
+        "variants": [
+            mg(mr("(2; 1)")),
+            mg(mr("(3; 2)")),
+            mg(mr("(1; −1)")),
+            mg(mr("(3; 1)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 57: x³ − y³ = 19, x² + xy + y² = 19
+    questions.append({
+        "num": 57,
+        "q": mg(msup(mr("x"), mr("3")), mr(" − "), msup(mr("y"), mr("3")), mr(" = 19, "), 
+              msup(mr("x"), mr("2")), mr(" + xy + "), msup(mr("y"), mr("2")), mr(" = 19")),
+        "variants": [
+            mg(mr("(3; 2)")),
+            mg(mr("(2; 1)")),
+            mg(mr("(4; 3)")),
+            mg(mr("(3; 1)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 58: x³ + y³ = 28, x² − xy + y² = 7
+    questions.append({
+        "num": 58,
+        "q": mg(msup(mr("x"), mr("3")), mr(" + "), msup(mr("y"), mr("3")), mr(" = 28, "), 
+              msup(mr("x"), mr("2")), mr(" − xy + "), msup(mr("y"), mr("2")), mr(" = 7")),
+        "variants": [
+            mg(mr("(3; 1) va (1; 3)")),
+            mg(mr("(2; 2)")),
+            mg(mr("(4; 2) va (2; 4)")),
+            mg(mr("(3; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 59: 8x³ − y³ = 7, 4x² − 2xy + y² = 7
+    questions.append({
+        "num": 59,
+        "q": mg(mr("8"), msup(mr("x"), mr("3")), mr(" − "), msup(mr("y"), mr("3")), 
+              mr(" = 7, 4"), msup(mr("x"), mr("2")), mr(" − 2xy + "), msup(mr("y"), mr("2")), mr(" = 7")),
+        "variants": [
+            mg(mr("(1; 1)")),
+            mg(mr("(2; 3)")),
+            mg(mr("(1; 2)")),
+            mg(mr("(3; 5)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 60: x⁴ + x²y² + y⁴ = 91, x² + xy + y = 13
+    questions.append({
+        "num": 60,
+        "q": mg(msup(mr("x"), mr("4")), mr(" + "), msup(mr("x"), mr("2")), msup(mr("y"), mr("2")), 
+              mr(" + "), msup(mr("y"), mr("4")), mr(" = 91, "), msup(mr("x"), mr("2")), 
+              mr(" + xy + y = 13")),
+        "variants": [
+            mg(mr("(3; 1) va (−3; 1)")),
+            mg(mr("(3; 1) faqat")),
+            mg(mr("(2; 3) va (−2; 3)")),
+            mg(mr("(1; 3) va (−1; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 61: x⁴ − x²y² + y⁴ = 133, x² − xy + y² = 7
+    questions.append({
+        "num": 61,
+        "q": mg(msup(mr("x"), mr("4")), mr(" − "), msup(mr("x"), mr("2")), msup(mr("y"), mr("2")), 
+              mr(" + "), msup(mr("y"), mr("4")), mr(" = 133, "), msup(mr("x"), mr("2")), 
+              mr(" − xy + "), msup(mr("y"), mr("2")), mr(" = 7")),
+        "variants": [
+            mg(mr("(4; 1) va (−4; −1)")),
+            mg(mr("(3; 2) va (−3; −2)")),
+            mg(mr("(4; 1) faqat")),
+            mg(mr("(5; 2) va (−5; −2)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 62: x − y + 6/(x−y) = 5, x/(x−y−2) = 4
+    questions.append({
+        "num": 62,
+        "q": mg(mr("{  x − y + "), mfrac(mr("6"), mr("x − y")), mr(" = 5, "), 
+              mfrac(mr("x"), mr("x − y − 2")), mr(" = 4")),
+        "variants": [
+            mg(mr("(10; 8)")),
+            mg(mr("(8; 6)")),
+            mg(mr("(12; 10)")),
+            mg(mr("(9; 7)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 63: x − 2y + 4/(x−2y) = 5, x/(x−2y−1) = 2
+    questions.append({
+        "num": 63,
+        "q": mg(mr("{  x − 2y + "), mfrac(mr("4"), mr("x − 2y")), mr(" = 5, "), 
+              mfrac(mr("x"), mr("x − 2y − 1")), mr(" = 2")),
+        "variants": [
+            mg(mr("(6; 2)")),
+            mg(mr("(4; 1)")),
+            mg(mr("(8; 3)")),
+            mg(mr("(5; 1.5)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 64: x² + xy = 20, y² + xy = 5
+    questions.append({
+        "num": 64,
+        "q": mg(msup(mr("x"), mr("2")), mr(" + xy = 20, "), msup(mr("y"), mr("2")), mr(" + xy = 5")),
+        "variants": [
+            mg(mr("(5; 1) va (−4; −5)")),
+            mg(mr("(4; 2) va (−5; −4)")),
+            mg(mr("(5; 1) faqat")),
+            mg(mr("(4; 1) va (−5; −5)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 65: x² + xy = 24, y² + xy = 12
+    questions.append({
+        "num": 65,
+        "q": mg(msup(mr("x"), mr("2")), mr(" + xy = 24, "), msup(mr("y"), mr("2")), mr(" + xy = 12")),
+        "variants": [
+            mg(mr("(6; 2) va (−4; −6)")),
+            mg(mr("(4; 3) va (−6; −4)")),
+            mg(mr("(6; 2) faqat")),
+            mg(mr("(5; 2) va (−5; −5)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 66: (5x−y)/(x+y) + (x+y)/(5x−y) = 2, x²−y² = −3
+    questions.append({
+        "num": 66,
+        "q": mg(mfrac(mr("5x − y"), mr("x + y")), mr(" + "), mfrac(mr("x + y"), mr("5x − y")), 
+              mr(" = 2, "), msup(mr("x"), mr("2")), mr(" − "), msup(mr("y"), mr("2")), mr(" = −3")),
+        "variants": [
+            mg(mr("(1; 2)")),
+            mg(mr("(2; 3)")),
+            mg(mr("(−1; 2)")),
+            mg(mr("(1; −2)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 67: (3x+2y)/(x−y) + (x−y)/(3x+2y) = 2.5, x²−y² = 15
+    questions.append({
+        "num": 67,
+        "q": mg(mfrac(mr("3x + 2y"), mr("x − y")), mr(" + "), 
+              mfrac(mr("x − y"), mr("3x + 2y")), mr(" = 2.5, "), 
+              msup(mr("x"), mr("2")), mr(" − "), msup(mr("y"), mr("2")), mr(" = 15")),
+        "variants": [
+            mg(mr("(3; 2)")),
+            mg(mr("(5; 2)")),
+            mg(mr("(4; 1)")),
+            mg(mr("(6; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 68: (x+3y)/(x−3y) + (x−3y)/(x+3y) = 3 1/3, x²+7y = 43
+    questions.append({
+        "num": 68,
+        "q": mg(mfrac(mr("x + 3y"), mr("x − 3y")), mr(" + "), 
+              mfrac(mr("x − 3y"), mr("x + 3y")), mr(" = 3"), mfrac(mr("1"), mr("3")), 
+              mr(", "), msup(mr("x"), mr("2")), mr(" + 7y = 43")),
+        "variants": [
+            mg(mr("(6; 1)")),
+            mg(mr("(5; 2)")),
+            mg(mr("(9; 2)")),
+            mg(mr("(7; 1)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 69: (5x/y) − (y/x) = 4, xy = 1
+    questions.append({
+        "num": 69,
+        "q": mg(mfrac(mr("5x"), mr("y")), mr(" − "), mfrac(mr("y"), mr("x")), mr(" = 4, xy = 1")),
+        "variants": [
+            mg(mr("(1; 1)")),
+            mg(mr("(2; 0.5)")),
+            mg(mr("(0.5; 2)")),
+            mg(mr("(1; 2)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 70: (x/y) + (y/x) = 2.5, x² + y² = 5
+    questions.append({
+        "num": 70,
+        "q": mg(mfrac(mr("x"), mr("y")), mr(" + "), mfrac(mr("y"), mr("x")), mr(" = 2.5, "), 
+              msup(mr("x"), mr("2")), mr(" + "), msup(mr("y"), mr("2")), mr(" = 5")),
+        "variants": [
+            mg(mr("(2; 1) va (1; 2)")),
+            mg(mr("(√3; √2) va (√2; √3)")),
+            mg(mr("(2; 1) faqat")),
+            mg(mr("(√5; 1) va (1; √5)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 71: x + y = 10, x² + y² − 2xy + 36 nechta yechimga ega?
+    questions.append({
+        "num": 71,
+        "q": mg(mr("{  x + y = 10, "), msup(mr("x"), mr("2")), mr(" + "), msup(mr("y"), mr("2")), 
+              mr(" − 2xy + 36  tenglamalar sistemasi nechta yechimga ega?")),
+        "variants": [
+            mg(mr("Cheksiz ko'p yechim")),
+            mg(mr("2 ta yechim")),
+            mg(mr("1 ta yechim")),
+            mg(mr("Yechimi yo'q"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 72: x + y = 8, (x−4)(y−3) = 0 — x larning yig'indisini toping
+    questions.append({
+        "num": 72,
+        "q": mg(mr("{  x + y = 8, (x − 4)(y − 3) = 0  tenglamalar sistemasini qanoatlantiruvchi "),
+              mr("x larning yig'indisini toping.")),
+        "variants": [
+            mg(mr("9")),
+            mg(mr("7")),
+            mg(mr("8")),
+            mg(mr("12"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 73: x² + y² = 100, xy = −24 nechta yechimga ega?
+    questions.append({
+        "num": 73,
+        "q": mg(msup(mr("x"), mr("2")), mr(" + "), msup(mr("y"), mr("2")), mr(" = 100, xy = −24  "),
+              mr("tenglamalar sistemasi nechta yechimga ega?")),
+        "variants": [
+            mg(mr("4 ta yechim")),
+            mg(mr("2 ta yechim")),
+            mg(mr("1 ta yechim")),
+            mg(mr("Yechimi yo'q"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 74: x/y³ = 4, x/x² = 9 — xy ning qiymatini toping
+    questions.append({
+        "num": 74,
+        "q": mg(mfrac(mr("x"), msup(mr("y"), mr("3"))), mr(" = 4, "), 
+              mfrac(mr("x"), msup(mr("z"), mr("2"))), mr(" = 9  bo'lsa, xy ning qiymatini toping.")),
+        "variants": [
+            mg(mr("1/18")),
+            mg(mr("18")),
+            mg(mr("1/36")),
+            mg(mr("36"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 75: x³ − y³ = 26, x − y = 2 — xy ning qiymatini toping
+    questions.append({
+        "num": 75,
+        "q": mg(msup(mr("x"), mr("3")), mr(" − "), msup(mr("y"), mr("3")), mr(" = 26, x − y = 2  "),
+              mr("bo'lsa, xy ning qiymatini toping.")),
+        "variants": [
+            mg(mr("3")),
+            mg(mr("6")),
+            mg(mr("9")),
+            mg(mr("12"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 76: x² + y² = 49, x² + y = 7 nechta yechimga ega?
+    questions.append({
+        "num": 76,
+        "q": mg(msup(mr("x"), mr("2")), mr(" + "), msup(mr("y"), mr("2")), mr(" = 49, "), 
+              msup(mr("x"), mr("2")), mr(" + y = 7  tenglamalar sistemasi nechta yechimga ega?")),
+        "variants": [
+            mg(mr("4 ta yechim")),
+            mg(mr("2 ta yechim")),
+            mg(mr("6 ta yechim")),
+            mg(mr("3 ta yechim"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 77: xy = 15, x² − y² = 16 — tenglama yechimlarining yig'indisini toping
+    questions.append({
+        "num": 77,
+        "q": mg(mr("xy = 15, "), msup(mr("x"), mr("2")), mr(" − "), msup(mr("y"), mr("2")), 
+              mr(" = 16  tenglama yechimlarining yig'indisini toping.")),
+        "variants": [
+            mg(mr("0")),
+            mg(mr("16")),
+            mg(mr("31")),
+            mg(mr("15"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 78: x² − 3x + 2/(y² + 6y − 40) = 0, x − 1/(y² + 6y − 40) = 0 — yechimlarning yig'indisi
+    questions.append({
+        "num": 78,
+        "q": mg(msup(mr("x"), mr("2")), mr(" − 3x + "), 
+              mfrac(mr("2"), mg(msup(mr("y"), mr("2")), mr(" + 6y − 40"))), mr(" = 0, "), 
+              mr("x − "), mfrac(mr("1"), mg(msup(mr("y"), mr("2")), mr(" + 6y − 40"))), 
+              mr(" = 0  tenglama yechimlarining yig'indisini toping.")),
+        "variants": [
+            mg(mr("−10")),
+            mg(mr("10")),
+            mg(mr("0")),
+            mg(mr("−6"))
+        ],
+        "correct": 0
+    })
+    
     return questions
 
 
@@ -625,7 +1370,7 @@ if __name__ == "__main__":
     balanced_questions = balance_answers(questions)
     
     # Write output file
-    output_file = "/projects/sandbox/test-yaratish-uchun/Tenglamalar_Sistemasi_Test.docx"
+    output_file = "/projects/sandbox/test-yaratish-uchun/Tenglamalar_Sistemasi_FULL_Test.docx"
     print("\n📝 Word faylini yaratish...")
     write_docx(output_file, balanced_questions)
     
