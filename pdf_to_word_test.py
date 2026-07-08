@@ -1123,6 +1123,130 @@ def generate_questions():
         "correct": 0
     })
     
+    # ═══════════════════════════════════════════════════════════════
+    #  PROBLEMS 79-87 FROM THIRD PDF
+    # ═══════════════════════════════════════════════════════════════
+    
+    # Problem 79: 3x−y = 1, 2x+y = 4, x²+y² = 5 — yechimlarni toping
+    questions.append({
+        "num": 79,
+        "q": mg(mr("{  3x − y = 1, 2x + y = 4, "), msup(mr("x"), mr("2")), mr(" + "), 
+              msup(mr("y"), mr("2")), mr(" = 5  tenglamalar sistemasi yechimlarini ko'paytmasini toping.")),
+        "variants": [
+            mg(mr("2")),
+            mg(mr("1")),
+            mg(mr("5")),
+            mg(mr("4"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 80: √(3(x²−4)) + x − 3xy + 4y² = 0 — butun yechimlar
+    questions.append({
+        "num": 80,
+        "q": mg(msqrt(mg(mr("3("), msup(mr("x"), mr("2")), mr(" − 4)"))), 
+              mr(" + x − 3xy + 4"), msup(mr("y"), mr("2")), 
+              mr(" = 0  tenglamani butun sonlarda yeching.")),
+        "variants": [
+            mg(mr("(2; 1), (−2; −1)")),
+            mg(mr("(2; 0), (−2; 0)")),
+            mg(mr("(2; 1) faqat")),
+            mg(mr("(±2; ±1), (±2; 0)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 81: Ikki sonning yig'indisi 12, ko'paytmasi 35
+    questions.append({
+        "num": 81,
+        "q": mg(mr("Ikki sonning yig'indisi 12 ga, ko'paytmasi 35 ga teng. Bu sonlarni toping.")),
+        "variants": [
+            mg(mr("5 va 7")),
+            mg(mr("4 va 8")),
+            mg(mr("3 va 9")),
+            mg(mr("6 va 6"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 82: Ikki sonning ayirmasi 5, ko'paytmasi 24
+    questions.append({
+        "num": 82,
+        "q": mg(mr("Ikki sonning ayirmasi 5 ga, ko'paytmasi 24 ga teng. Bu sonlarni toping.")),
+        "variants": [
+            mg(mr("8 va 3")),
+            mg(mr("9 va 4")),
+            mg(mr("7 va 2")),
+            mg(mr("6 va 1"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 83: Ikki sonning ayirmasi 8, ko'paytmasi 48
+    questions.append({
+        "num": 83,
+        "q": mg(mr("Ikki sonning ayirmasi 8 ga, ko'paytmasi 48 ga teng. Bu sonlarni toping.")),
+        "variants": [
+            mg(mr("12 va 4")),
+            mg(mr("10 va 2")),
+            mg(mr("14 va 6")),
+            mg(mr("16 va 8"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 84: Ikkita musbat sonning ko'paytmasi 21, kvadratlari yig'indisi 58
+    questions.append({
+        "num": 84,
+        "q": mg(mr("Ikkita musbat sonning ko'paytmasi 21 ga, kvadratlari yig'indisi 58 ga teng. Bu sonlarni toping.")),
+        "variants": [
+            mg(mr("7 va 3")),
+            mg(mr("6 va 3.5")),
+            mg(mr("21 va 1")),
+            mg(mr("14 va 1.5"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 85: Ikkita musbat sonning ko'paytmasi 18, kvadratlari yig'indisi 45
+    questions.append({
+        "num": 85,
+        "q": mg(mr("Ikkita musbat sonning ko'paytmasi 18 ga, kvadratlari yig'indisi 45 ga teng. Bu sonlarni toping.")),
+        "variants": [
+            mg(mr("6 va 3")),
+            mg(mr("9 va 2")),
+            mg(mr("18 va 1")),
+            mg(mr("4.5 va 4"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 86: Ikkita musbat sonning ko'paytmasi 24, kvadratlari yig'indisi 73
+    questions.append({
+        "num": 86,
+        "q": mg(mr("Ikkita musbat sonning ko'paytmasi 24 ga, kvadratlari yig'indisi 73 ga teng. Bu sonlarni toping.")),
+        "variants": [
+            mg(mr("8 va 3")),
+            mg(mr("6 va 4")),
+            mg(mr("12 va 2")),
+            mg(mr("24 va 1"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 87: Diagonal √13, yuzi 6 — to'rtburchak perimetri
+    questions.append({
+        "num": 87,
+        "q": mg(mr("Diagonali "), msqrt(mr("13")), mr(" ga, yuzi 6 ga teng bo'lgan to'rtburchakning perimetrini toping.")),
+        "variants": [
+            mg(mr("14")),
+            mg(mr("12")),
+            mg(mr("16")),
+            mg(mr("10"))
+        ],
+        "correct": 0
+    })
+    
     return questions
 
 
@@ -1370,7 +1494,7 @@ if __name__ == "__main__":
     balanced_questions = balance_answers(questions)
     
     # Write output file
-    output_file = "/projects/sandbox/test-yaratish-uchun/Tenglamalar_Sistemasi_FULL_Test.docx"
+    output_file = "/projects/sandbox/test-yaratish-uchun/Tenglamalar_Sistemasi_SUPER_FULL_Test.docx"
     print("\n📝 Word faylini yaratish...")
     write_docx(output_file, balanced_questions)
     
