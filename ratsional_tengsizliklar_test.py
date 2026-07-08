@@ -984,6 +984,389 @@ def generate_questions():
         "correct": 0
     })
     
+    # ═══════════════════════════════════════════════════════════════
+    #  PROBLEMS 57-99 FROM SECOND PDF
+    # ═══════════════════════════════════════════════════════════════
+    
+    # Problem 57: x/3 > 0
+    questions.append({
+        "num": 57,
+        "q": mg(mfrac(mr("x"), mr("3")), mr(" > 0")),
+        "variants": [
+            mg(mr("(0; +∞)")),
+            mg(mr("[0; +∞)")),
+            mg(mr("(−∞; 0)")),
+            mg(mr("ℝ \\ {0}"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 58: (x+2)/18 ≤ 0
+    questions.append({
+        "num": 58,
+        "q": mg(mfrac(mr("x + 2"), mr("18")), mr(" ≤ 0")),
+        "variants": [
+            mg(mr("(−∞; −2]")),
+            mg(mr("[−2; +∞)")),
+            mg(mr("(−∞; −2)")),
+            mg(mr("[−2; 0]"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 59: (x−2)/(x+5) ≥ 0
+    questions.append({
+        "num": 59,
+        "q": mg(mfrac(mr("x − 2"), mr("x + 5")), mr(" ≥ 0")),
+        "variants": [
+            mg(mr("(−∞; −5) ∪ [2; +∞)")),
+            mg(mr("[−5; 2]")),
+            mg(mr("(−5; 2)")),
+            mg(mr("(−∞; −5] ∪ [2; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 60: (x+5)/(x−1) ≥ 0
+    questions.append({
+        "num": 60,
+        "q": mg(mfrac(mr("x + 5"), mr("x − 1")), mr(" ≥ 0")),
+        "variants": [
+            mg(mr("(−∞; −5] ∪ (1; +∞)")),
+            mg(mr("[−5; 1]")),
+            mg(mr("(−5; 1)")),
+            mg(mr("(−∞; −5) ∪ [1; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 61: x/(x−1) ≥ 1
+    questions.append({
+        "num": 61,
+        "q": mg(mfrac(mr("x"), mr("x − 1")), mr(" ≥ 1")),
+        "variants": [
+            mg(mr("(1; +∞)")),
+            mg(mr("[1; +∞)")),
+            mg(mr("(−∞; 1)")),
+            mg(mr("ℝ \\ {1}"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 62: (2x+3)/(x−12) ≥ 0
+    questions.append({
+        "num": 62,
+        "q": mg(mfrac(mr("2x + 3"), mr("x − 12")), mr(" ≥ 0")),
+        "variants": [
+            mg(mr("(−∞; −1.5] ∪ (12; +∞)")),
+            mg(mr("[−1.5; 12]")),
+            mg(mr("(−1.5; 12)")),
+            mg(mr("(−∞; −1.5) ∪ [12; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 63: x/(x−1) ≤ −1
+    questions.append({
+        "num": 63,
+        "q": mg(mfrac(mr("x"), mr("x − 1")), mr(" ≤ −1")),
+        "variants": [
+            mg(mr("[0; 1)")),
+            mg(mr("(0; 1]")),
+            mg(mr("[0; 1]")),
+            mg(mr("(−∞; 0] ∪ (1; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 64: (2x−3)/(2x+5) ≤ 1
+    questions.append({
+        "num": 64,
+        "q": mg(mfrac(mr("2x − 3"), mr("2x + 5")), mr(" ≤ 1")),
+        "variants": [
+            mg(mr("ℝ \\ {−2.5}")),
+            mg(mr("(−∞; −2.5)")),
+            mg(mr("(−2.5; +∞)")),
+            mg(mr("∅"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 65: x/(x+2) ≤ 2
+    questions.append({
+        "num": 65,
+        "q": mg(mfrac(mr("x"), mr("x + 2")), mr(" ≤ 2")),
+        "variants": [
+            mg(mr("(−∞; −4] ∪ (−2; +∞)")),
+            mg(mr("[−4; −2]")),
+            mg(mr("(−4; −2)")),
+            mg(mr("(−∞; −4) ∪ [−2; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 66: (x+1)/(x−2) ≥ 1/4
+    questions.append({
+        "num": 66,
+        "q": mg(mfrac(mr("x + 1"), mr("x − 2")), mr(" ≥ "), mfrac(mr("1"), mr("4"))),
+        "variants": [
+            mg(mr("(−∞; ⅔] ∪ (2; +∞)")),
+            mg(mr("[⅔; 2]")),
+            mg(mr("(⅔; 2)")),
+            mg(mr("(−∞; ⅔) ∪ [2; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 67: (x−1)/(3−x) > 0
+    questions.append({
+        "num": 67,
+        "q": mg(mfrac(mr("x − 1"), mr("3 − x")), mr(" > 0")),
+        "variants": [
+            mg(mr("(1; 3)")),
+            mg(mr("(−∞; 1) ∪ (3; +∞)")),
+            mg(mr("[1; 3]")),
+            mg(mr("(−∞; 1] ∪ [3; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 68: (x+3)/(5−2x) < 0
+    questions.append({
+        "num": 68,
+        "q": mg(mfrac(mr("x + 3"), mr("5 − 2x")), mr(" < 0")),
+        "variants": [
+            mg(mr("(−∞; −3) ∪ (2.5; +∞)")),
+            mg(mr("(−3; 2.5)")),
+            mg(mr("[−3; 2.5]")),
+            mg(mr("(−∞; −3] ∪ [2.5; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 69: (6−x)/(x+3) ≤ 0
+    questions.append({
+        "num": 69,
+        "q": mg(mfrac(mr("6 − x"), mr("x + 3")), mr(" ≤ 0")),
+        "variants": [
+            mg(mr("(−∞; −3) ∪ [6; +∞)")),
+            mg(mr("[−3; 6]")),
+            mg(mr("(−3; 6)")),
+            mg(mr("(−∞; −3] ∪ [6; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 70: (1−x)/(x−2) ≥ 0
+    questions.append({
+        "num": 70,
+        "q": mg(mfrac(mr("1 − x"), mr("x − 2")), mr(" ≥ 0")),
+        "variants": [
+            mg(mr("[1; 2)")),
+            mg(mr("(1; 2]")),
+            mg(mr("[1; 2]")),
+            mg(mr("(−∞; 1] ∪ (2; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 71: (x²−3x)/(4x−1) ≤ 0
+    questions.append({
+        "num": 71,
+        "q": mg(mfrac(mg(msup(mr("x"), mr("2")), mr(" − 3x")), mr("4x − 1")), mr(" ≤ 0")),
+        "variants": [
+            mg(mr("[0; 0.25) ∪ [3; +∞)")),
+            mg(mr("(−∞; 0] ∪ (0.25; 3]")),
+            mg(mr("[0; 3]")),
+            mg(mr("(0; 0.25) ∪ (3; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 72: (2x−4)/(x²+1) ≥ 0
+    questions.append({
+        "num": 72,
+        "q": mg(mfrac(mr("2x − 4"), mg(msup(mr("x"), mr("2")), mr(" + 1"))), mr(" ≥ 0")),
+        "variants": [
+            mg(mr("[2; +∞)")),
+            mg(mr("(2; +∞)")),
+            mg(mr("(−∞; 2]")),
+            mg(mr("ℝ"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 73: (x−2)(x+1)/((x−3)(x+4)) ≥ 0
+    questions.append({
+        "num": 73,
+        "q": mg(mfrac(mr("(x − 2)(x + 1)"), mr("(x − 3)(x + 4)")), mr(" ≥ 0")),
+        "variants": [
+            mg(mr("(−4; −1] ∪ [2; 3)")),
+            mg(mr("[−4; −1] ∪ [2; 3]")),
+            mg(mr("(−∞; −4) ∪ [−1; 2] ∪ (3; +∞)")),
+            mg(mr("(−4; −1) ∪ (2; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 74: (x²−4)/(x²−9) < 0
+    questions.append({
+        "num": 74,
+        "q": mg(mfrac(mg(msup(mr("x"), mr("2")), mr(" − 4")), 
+              mg(msup(mr("x"), mr("2")), mr(" − 9"))), mr(" < 0")),
+        "variants": [
+            mg(mr("(−3; −2) ∪ (2; 3)")),
+            mg(mr("[−3; −2] ∪ [2; 3]")),
+            mg(mr("(−∞; −3) ∪ (−2; 2) ∪ (3; +∞)")),
+            mg(mr("(−2; 2)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 75: (x²−5x+6)/(x²−x−2) > 0
+    questions.append({
+        "num": 75,
+        "q": mg(mfrac(mg(msup(mr("x"), mr("2")), mr(" − 5x + 6")), 
+              mg(msup(mr("x"), mr("2")), mr(" − x − 2"))), mr(" > 0")),
+        "variants": [
+            mg(mr("(−1; 2) ∪ (3; +∞)")),
+            mg(mr("(−∞; −1) ∪ (2; 3)")),
+            mg(mr("[−1; 2] ∪ [3; +∞)")),
+            mg(mr("(2; 3)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 91: (20−x−x²)/(x²−5x+6) ≤ 0
+    questions.append({
+        "num": 91,
+        "q": mg(mfrac(mg(mr("20 − x − "), msup(mr("x"), mr("2"))), 
+              mg(msup(mr("x"), mr("2")), mr(" − 5x + 6"))), mr(" ≤ 0")),
+        "variants": [
+            mg(mr("(−∞; −5] ∪ (2; 3) ∪ [4; +∞)")),
+            mg(mr("[−5; 2) ∪ (3; 4]")),
+            mg(mr("(−∞; −5) ∪ [2; 3] ∪ (4; +∞)")),
+            mg(mr("[−5; 4]"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 92: (x²+5x+1)/(x²−4) + 3/(x−2) ≤ 0
+    questions.append({
+        "num": 92,
+        "q": mg(mfrac(mg(msup(mr("x"), mr("2")), mr(" + 5x + 1")), 
+              mg(msup(mr("x"), mr("2")), mr(" − 4"))), mr(" + "), 
+              mfrac(mr("3"), mr("x − 2")), mr(" ≤ 0")),
+        "variants": [
+            mg(mr("(−∞; −2) ∪ [−1; 2)")),
+            mg(mr("[−2; −1] ∪ [2; +∞)")),
+            mg(mr("(−2; −1) ∪ (2; +∞)")),
+            mg(mr("(−∞; −1] ∪ (2; +∞)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 93: (x²−7x−2)/(x²+3x+2) − (2x−8)/(x+2) ≥ 0
+    questions.append({
+        "num": 93,
+        "q": mg(mfrac(mg(msup(mr("x"), mr("2")), mr(" − 7x − 2")), 
+              mg(msup(mr("x"), mr("2")), mr(" + 3x + 2"))), mr(" − "), 
+              mfrac(mr("2x − 8"), mr("x + 2")), mr(" ≥ 0")),
+        "variants": [
+            mg(mr("(−2; −1) ∪ [3; +∞)")),
+            mg(mr("[−2; −1] ∪ [3; +∞)")),
+            mg(mr("(−∞; −2) ∪ (−1; 3]")),
+            mg(mr("(−2; 3]"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 94: (x²−5x+64)/(x²−11x+30) ≤ 10/(5−x)
+    questions.append({
+        "num": 94,
+        "q": mg(mfrac(mg(msup(mr("x"), mr("2")), mr(" − 5x + 64")), 
+              mg(msup(mr("x"), mr("2")), mr(" − 11x + 30"))), mr(" ≤ "), 
+              mfrac(mr("10"), mr("5 − x"))),
+        "variants": [
+            mg(mr("[−6; 5) ∪ (6; +∞)")),
+            mg(mr("(−∞; −6] ∪ (5; 6)")),
+            mg(mr("[−6; 6]")),
+            mg(mr("(5; 6)"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 95: (2x²−14x+6)/(x²−4x+3) ≥ (3x−8)/(x−3)
+    questions.append({
+        "num": 95,
+        "q": mg(mfrac(mg(mr("2"), msup(mr("x"), mr("2")), mr(" − 14x + 6")), 
+              mg(msup(mr("x"), mr("2")), mr(" − 4x + 3"))), mr(" ≥ "), 
+              mfrac(mr("3x − 8"), mr("x − 3"))),
+        "variants": [
+            mg(mr("(−∞; −1] ∪ (1; 3) ∪ [4; +∞)")),
+            mg(mr("[−1; 1) ∪ (3; 4]")),
+            mg(mr("(−∞; −1) ∪ [1; 3] ∪ (4; +∞)")),
+            mg(mr("[−1; 4]"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 96: x⁵ + x³ + x ≥ 138 (Iqtidorli o'quvchilar uchun)
+    questions.append({
+        "num": 96,
+        "q": mg(msup(mr("x"), mr("5")), mr(" + "), msup(mr("x"), mr("3")), 
+              mr(" + x ≥ 138")),
+        "variants": [
+            mg(mr("[3; +∞)")),
+            mg(mr("(3; +∞)")),
+            mg(mr("[2; +∞)")),
+            mg(mr("(−∞; 3]"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 97: x⁶ + 3x⁴ + 6x² < 10 (Iqtidorli o'quvchilar uchun)
+    questions.append({
+        "num": 97,
+        "q": mg(msup(mr("x"), mr("6")), mr(" + 3"), msup(mr("x"), mr("4")), 
+              mr(" + 6"), msup(mr("x"), mr("2")), mr(" < 10")),
+        "variants": [
+            mg(mr("(−1; 1)")),
+            mg(mr("[−1; 1]")),
+            mg(mr("(−∞; −1) ∪ (1; +∞)")),
+            mg(mr("∅"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 98: 2/(x²+6x+10) + 5/(x²+6x+14) > 3 (Iqtidorli o'quvchilar)
+    questions.append({
+        "num": 98,
+        "q": mg(mfrac(mr("2"), mg(msup(mr("x"), mr("2")), mr(" + 6x + 10"))), mr(" + "), 
+              mfrac(mr("5"), mg(msup(mr("x"), mr("2")), mr(" + 6x + 14"))), mr(" > 3")),
+        "variants": [
+            mg(mr("(−4; −2)")),
+            mg(mr("[−4; −2]")),
+            mg(mr("(−∞; −4) ∪ (−2; +∞)")),
+            mg(mr("ℝ"))
+        ],
+        "correct": 0
+    })
+    
+    # Problem 99: Similar complex inequality
+    questions.append({
+        "num": 99,
+        "q": mg(mfrac(mg(msup(mr("x"), mr("2")), mr(" + x − 6")), 
+              mg(msup(mr("x"), mr("2")), mr(" − 4"))), mr(" ≥ 0")),
+        "variants": [
+            mg(mr("(−∞; −2) ∪ [−3; 2) ∪ [3; +∞)")),
+            mg(mr("[−3; −2) ∪ (2; 3]")),
+            mg(mr("(−3; −2) ∪ (2; 3)")),
+            mg(mr("(−∞; −3] ∪ [−2; 2] ∪ [3; +∞)"))
+        ],
+        "correct": 0
+    })
+    
     return questions
 
 
@@ -1043,7 +1426,7 @@ if __name__ == "__main__":
     balanced_questions = balance_answers(questions)
     
     # Write output file
-    output_file = "/projects/sandbox/test-yaratish-uchun/Ratsional_Tengsizliklar_Test.docx"
+    output_file = "/projects/sandbox/test-yaratish-uchun/Ratsional_Tengsizliklar_SUPER_Test.docx"
     print("\n📝 Word faylini yaratish...")
     write_docx(output_file, balanced_questions)
     
